@@ -22,7 +22,7 @@ class m180725_183012_create_category_table extends Migration
             'meta_description' => $this->string(200),
             'meta_keywords' => $this->text(),
             'description' => $this->text(),
-            'status' => $this->boolean()->defaultValue(true),
+            'status' => $this->tinyInteger()->defaultValue(1),
             'slug' => $this->string(50)->unique(),
         ]);
     }

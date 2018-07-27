@@ -26,6 +26,7 @@ class m180725_183024_create_article_table extends Migration
             'allow_comment' => $this->boolean()->defaultValue(true),
             'viewed' => $this->integer(),
             'status' => $this->boolean()->defaultValue(true),
+            'allow_main' => $this->boolean()->defaultValue(true),
             'icon' => $this->string(),
             'created_at' => $this->integer()->notNull(),
             'updated_at' => $this->integer()->notNull(),
